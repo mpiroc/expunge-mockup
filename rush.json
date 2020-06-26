@@ -156,8 +156,8 @@
    * To remove these restrictions, you could set projectFolderMinDepth=1
    * and set projectFolderMaxDepth to a large number.
    */
-  "projectFolderMinDepth": 2,
-  "projectFolderMaxDepth": 2,
+  "projectFolderMinDepth": 3,
+  "projectFolderMaxDepth": 3,
 
   /**
    * Today the npmjs.com registry enforces fairly strict naming rules for packages, but in the early
@@ -361,42 +361,54 @@
    * 3. It's useful to have a centralized inventory of all projects and their important metadata.
    */
   "projects": [
+    // Lambda Function Packages
     {
-      "packageName": "@code-for-baltimore/application-deployment",
-      "projectFolder": "tools/application-deployment",
-      "reviewCategory": "tools",
+      "packageName": "@code-for-baltimore/add-subscription",
+      "projectFolder": "packages/lambda-functions/add-subscription",
+      "reviewCategory": "production",
       "shouldPublish": false
     },
-    {
-      "packageName": "@code-for-baltimore/ci-deployment",
-      "projectFolder": "tools/ci-deployment",
-      "reviewCategory": "tools",
-      "shouldPublish": false
-    },
+
+    // Config packages
     {
       "packageName": "@code-for-baltimore/api-extractor-config",
-      "projectFolder": "tools/api-extractor-config",
+      "projectFolder": "packages/config/api-extractor-config",
       "reviewCategory": "tools",
       "shouldPublish": false
     },
     {
       "packageName": "@code-for-baltimore/eslint-config",
-      "projectFolder": "tools/eslint-config",
+      "projectFolder": "packages/config/eslint-config",
       "reviewCategory": "tools",
       "shouldPublish": false
     },
     {
       "packageName": "@code-for-baltimore/jest-config",
-      "projectFolder": "tools/jest-config",
+      "projectFolder": "packages/config/jest-config",
       "reviewCategory": "tools",
       "shouldPublish": false
     },
     {
       "packageName": "@code-for-baltimore/ts-config",
-      "projectFolder": "tools/ts-config",
+      "projectFolder": "packages/config/ts-config",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    },
+
+    // Packages for infrastructure management
+    {
+      "packageName": "@code-for-baltimore/application-deployment",
+      "projectFolder": "packages/tools/application-deployment",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@code-for-baltimore/ci-deployment",
+      "projectFolder": "packages/tools/ci-deployment",
       "reviewCategory": "tools",
       "shouldPublish": false
     }
+    
     // {
     //   /**
     //    * The NPM package name of the project (must match package.json)

@@ -20,19 +20,19 @@
     },
     {
       "name": "@code-for-baltimore/api-extractor-config",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "@code-for-baltimore/eslint-config",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "@code-for-baltimore/jest-config",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "@code-for-baltimore/ts-config",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "@microsoft/api-extractor",
@@ -44,11 +44,11 @@
     },
     {
       "name": "@typescript-eslint/eslint-plugin",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "@typescript-eslint/parser",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "@typescript-eslint/typescript-estree",
@@ -60,11 +60,11 @@
     },
     {
       "name": "eslint",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     }
   ]
 }

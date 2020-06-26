@@ -362,8 +362,8 @@
    */
   "projects": [
     {
-      "packageName": "@code-for-baltimore/applicaion-deployment",
-      "projectFolder": "tools/applicaion-deployment",
+      "packageName": "@code-for-baltimore/application-deployment",
+      "projectFolder": "tools/application-deployment",
       "reviewCategory": "tools",
       "shouldPublish": false
     },
@@ -375,25 +375,25 @@
     },
     {
       "packageName": "@code-for-baltimore/api-extractor-config",
-      "projectFolder": "tools/ci-pipeline",
+      "projectFolder": "tools/api-extractor-config",
       "reviewCategory": "tools",
       "shouldPublish": false
     },
     {
       "packageName": "@code-for-baltimore/eslint-config",
-      "projectFolder": "tools/ci-pipeline",
+      "projectFolder": "tools/eslint-config",
       "reviewCategory": "tools",
       "shouldPublish": false
     },
     {
       "packageName": "@code-for-baltimore/jest-config",
-      "projectFolder": "tools/ci-pipeline",
+      "projectFolder": "tools/jest-config",
       "reviewCategory": "tools",
       "shouldPublish": false
     },
     {
       "packageName": "@code-for-baltimore/ts-config",
-      "projectFolder": "tools/ci-pipeline",
+      "projectFolder": "tools/ts-config",
       "reviewCategory": "tools",
       "shouldPublish": false
     }

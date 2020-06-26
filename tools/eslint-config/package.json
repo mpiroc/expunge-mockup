@@ -1,6 +1,6 @@
 {
   "name": "@code-for-baltimore/eslint-config",
-  "version": "0.0.10",
+  "version": "0.0.1",
   "description": "Standard ESLint configuration for @code-for-baltimore",
   "license": "UNLICENSED",
   "main": "out/lib/index.js",
@@ -26,6 +26,6 @@
     "@code-for-baltimore/ts-config": "^0.0.1",
     "@types/node": "^14.0.14",
     "@typescript-eslint/typescript-estree": "^3.4.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.9.5"
   }
 }

@@ -1,0 +1,50 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@code-for-baltimore/api-extractor-config",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@code-for-baltimore/eslint-config",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@code-for-baltimore/jest-config",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@code-for-baltimore/ts-config",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@microsoft/api-extractor",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@rushstack/eslint-config",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@typescript-eslint/typescript-estree",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "eslint",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "tools" ]
+    }
+  ]
+}

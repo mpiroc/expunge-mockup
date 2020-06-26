@@ -1,0 +1,15 @@
+{
+  "name": "@code-for-baltimore/api-extractor-config",
+  "version": "0.0.1",
+  "description": "Standard @microsoft/api-extractor configuration for @code-for-baltimore",
+  "license": "UNLICENSED",
+  "files": [
+    "api-extractor.json"
+  ],
+  "engines": {
+    "node": "^12.13.0"
+  },
+  "peerDependencies": {
+    "@microsoft/api-extractor": "^7.8.15"
+  }
+}

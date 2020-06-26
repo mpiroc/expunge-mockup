@@ -1,0 +1,39 @@
+/**
+ * Config file for API Extractor.  For more info, please visit: https://api-extractor.com
+ */
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+  "mainEntryPointFilePath": "<projectFolder>/out/lib/index.d.ts",
+  "bundledPackages": [],
+  "compiler": {},
+  "apiReport": {
+    "enabled": true
+  },
+  "docModel": {
+    "enabled": true
+  },
+  "dtsRollup": {
+    "enabled": true,
+    "untrimmedFilePath": "<projectFolder>/dist/lib/index.d.ts",
+    "betaTrimmedFilePath": "<projectFolder>/dist/lib/index-beta.d.ts",
+    "publicTrimmedFilePath": "<projectFolder>/dist/lib/index-public.d.ts"
+  },
+  "tsdocMetadata": {},
+  "messages": {
+    "compilerMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    },
+    "extractorMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    },
+    "tsdocMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@code-for-baltimore/application-deployment",
+  "version": "0.0.1",
+  "description": "Deployment project that deploys this application to AWS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@code-for-baltimore/api-extractor-config": "^0.0.1",
+    "@code-for-baltimore/eslint-config": "^0.0.1",
+    "@code-for-baltimore/jest-config": "^0.0.1",
+    "@code-for-baltimore/ts-config": "^0.0.1"
+  }
+}

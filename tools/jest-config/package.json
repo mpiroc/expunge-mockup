@@ -1,0 +1,13 @@
+{
+    "name": "@code-for-baltimore/jest-config",
+    "version": "0.0.1",
+    "description": "Standard Jest configuration for @code-for-baltimore",
+    "license": "UNLICENSED",
+    "contributors": [],
+    "files": [
+        "jest-preset.json"
+    ],
+    "engines": {
+        "node": "^12.13.0"
+    }
+}

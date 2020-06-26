@@ -26,7 +26,7 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "4.12.5",
+  "pnpmVersion": "5.2.6",
 
   // "npmVersion": "4.5.0",
   // "yarnVersion": "1.9.4",
@@ -131,7 +131,7 @@
    * version. In those cases, you will need to add an entry to the "allowedAlternativeVersions"
    * section of the common-versions.json.
    */
-  // "ensureConsistentVersions": true,
+  "ensureConsistentVersions": true,
 
   /**
    * Large monorepos can become intimidating for newcomers if project folder paths don't follow
@@ -156,8 +156,8 @@
    * To remove these restrictions, you could set projectFolderMinDepth=1
    * and set projectFolderMaxDepth to a large number.
    */
-  // "projectFolderMinDepth": 2,
-  // "projectFolderMaxDepth": 2,
+  "projectFolderMinDepth": 2,
+  "projectFolderMaxDepth": 2,
 
   /**
    * Today the npmjs.com registry enforces fairly strict naming rules for packages, but in the early
@@ -179,34 +179,34 @@
    * The approvals are tracked in two config files "browser-approved-packages.json"
    * and "nonbrowser-approved-packages.json".  See the Rush documentation for details.
    */
-  // "approvedPackagesPolicy": {
-  //   /**
-  //    * The review categories allow you to say for example "This library is approved for usage
-  //    * in prototypes, but not in production code."
-  //    *
-  //    * Each project can be associated with one review category, by assigning the "reviewCategory" field
-  //    * in the "projects" section of rush.json.  The approval is then recorded in the files
-  //    * "common/config/rush/browser-approved-packages.json" and "nonbrowser-approved-packages.json"
-  //    * which are automatically generated during "rush update".
-  //    *
-  //    * Designate categories with whatever granularity is appropriate for your review process,
-  //    * or you could just have a single category called "default".
-  //    */
-  //   "reviewCategories": [
-  //     // Some example categories:
-  //     "production", // projects that ship to production
-  //     "tools",      // non-shipping projects that are part of the developer toolchain
-  //     "prototypes"  // experiments that should mostly be ignored by the review process
-  //   ],
-  // 
-  //   /**
-  //    * A list of NPM package scopes that will be excluded from review.
-  //    * We recommend to exclude TypeScript typings (the "@types" scope), because
-  //    * if the underlying package was already approved, this would imply that the typings
-  //    * are also approved.
-  //    */
-  //   // "ignoredNpmScopes": ["@types"]
-  // },
+  "approvedPackagesPolicy": {
+    /**
+     * The review categories allow you to say for example "This library is approved for usage
+     * in prototypes, but not in production code."
+     *
+     * Each project can be associated with one review category, by assigning the "reviewCategory" field
+     * in the "projects" section of rush.json.  The approval is then recorded in the files
+     * "common/config/rush/browser-approved-packages.json" and "nonbrowser-approved-packages.json"
+     * which are automatically generated during "rush update".
+     *
+     * Designate categories with whatever granularity is appropriate for your review process,
+     * or you could just have a single category called "default".
+     */
+    "reviewCategories": [
+      // Some example categories:
+      "production", // projects that ship to production
+      "tools",      // non-shipping projects that are part of the developer toolchain
+      "prototypes"  // experiments that should mostly be ignored by the review process
+    ],
+  
+    /**
+     * A list of NPM package scopes that will be excluded from review.
+     * We recommend to exclude TypeScript typings (the "@types" scope), because
+     * if the underlying package was already approved, this would imply that the typings
+     * are also approved.
+     */
+    "ignoredNpmScopes": ["@types"]
+  },
 
   /**
    * If you use Git as your version control system, this section has some additional
@@ -361,6 +361,42 @@
    * 3. It's useful to have a centralized inventory of all projects and their important metadata.
    */
   "projects": [
+    {
+      "packageName": "@code-for-baltimore/applicaion-deployment",
+      "projectFolder": "tools/applicaion-deployment",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@code-for-baltimore/ci-deployment",
+      "projectFolder": "tools/ci-deployment",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@code-for-baltimore/api-extractor-config",
+      "projectFolder": "tools/ci-pipeline",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@code-for-baltimore/eslint-config",
+      "projectFolder": "tools/ci-pipeline",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@code-for-baltimore/jest-config",
+      "projectFolder": "tools/ci-pipeline",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@code-for-baltimore/ts-config",
+      "projectFolder": "tools/ci-pipeline",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    }
     // {
     //   /**
     //    * The NPM package name of the project (must match package.json)

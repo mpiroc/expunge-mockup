@@ -1,0 +1,17 @@
+
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+  pre_build:
+    commands:
+      - node common/scripts/install-run-rush.js update
+  build:
+    commands:
+      - node common/scripts/install-run-rush.js build
+      - node common/scripts/install-run-rush.js lint
+  post_build:
+    commands:
+      - node common/scripts/install-run-rush.js test
+      

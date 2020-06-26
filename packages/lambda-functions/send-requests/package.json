@@ -1,0 +1,3 @@
+{
+    "description": "Lambda function that directly contacts the external service and enqueues its response for processing"
+}

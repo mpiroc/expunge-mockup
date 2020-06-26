@@ -1,0 +1,3 @@
+{
+    "description": "Lambda function that searches for cases that haven't been updated in a while, and queues them to be refreshed"
+}

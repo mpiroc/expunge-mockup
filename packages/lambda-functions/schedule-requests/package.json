@@ -1,0 +1,3 @@
+{
+    "description": "Lambda function that throttles the rate at which requests are sent to external services"
+}

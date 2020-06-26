@@ -1,0 +1,3 @@
+{
+    "description": "Lambda function that stores the result of status updates and notifies subscribers"
+}

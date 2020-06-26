@@ -1,0 +1,3 @@
+{
+    "description": "Lambda function that subscribes a the specified user to status updates for the specified case"
+}

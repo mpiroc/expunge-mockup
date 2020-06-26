@@ -1,4 +1,8 @@
 dependencies:
+  '@aws-cdk/aws-codebuild': 1.47.0
+  '@aws-cdk/aws-kms': 1.47.0
+  '@aws-cdk/aws-ssm': 1.47.0
+  '@aws-cdk/core': 1.47.0
   '@microsoft/api-extractor': 7.8.15
   '@rush-temp/api-extractor-config': 'file:projects/api-extractor-config.tgz'
   '@rush-temp/application-deployment': 'file:projects/application-deployment.tgz'
@@ -11,10 +15,321 @@ dependencies:
   '@typescript-eslint/eslint-plugin': 3.4.0_15ebbbb8363c75064fc079244e83c2c7
   '@typescript-eslint/parser': 3.4.0_eslint@7.3.1+typescript@3.9.5
   '@typescript-eslint/typescript-estree': 3.4.0_typescript@3.9.5
+  aws-sdk: 2.706.0
   eslint: 7.3.1
   typescript: 3.9.5
 lockfileVersion: 5.1
 packages:
+  /@aws-cdk/assets/1.47.0:
+    dependencies:
+      '@aws-cdk/core': 1.47.0
+      '@aws-cdk/cx-api': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-CZOzfiyrsEY5WM37mwDMd6y3hrUo0APoQtZwNu5JTQAHW28oyMreKvRuJ2UdSTtp9J8d5bG/vUZbGvgHwFd1pQ==
+  /@aws-cdk/aws-cloudformation/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-s3': 1.47.0
+      '@aws-cdk/aws-sns': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      '@aws-cdk/cx-api': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-PPmvLPjQPRJN2SySrlJCTjXdV1C5ki26C3YZMF3ICz58cgQgjwGzX/oUN8QeNS9909HeGDB7QwRUz7GrgObhVw==
+  /@aws-cdk/aws-cloudwatch/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-1hEI7E7x9rOFnd3DocA/QL7QKNaLfhRV8jtrY/+pCEdS3gGBInLzfbkzibK/bpzwi/Ikv1fihx+j7G/Q944v9g==
+  /@aws-cdk/aws-codebuild/1.47.0:
+    dependencies:
+      '@aws-cdk/assets': 1.47.0
+      '@aws-cdk/aws-cloudwatch': 1.47.0
+      '@aws-cdk/aws-codecommit': 1.47.0
+      '@aws-cdk/aws-ec2': 1.47.0
+      '@aws-cdk/aws-ecr': 1.47.0
+      '@aws-cdk/aws-ecr-assets': 1.47.0
+      '@aws-cdk/aws-events': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/aws-s3': 1.47.0
+      '@aws-cdk/aws-s3-assets': 1.47.0
+      '@aws-cdk/aws-secretsmanager': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-bI7hEZxdT2WVZHP1ECn+qCRmpSt9bURdJgb0jHDl8I0tk7/7JkDnFwwdb8oYaJCv28rW9qhtsZO9pvPRJ4b50w==
+  /@aws-cdk/aws-codecommit/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-events': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-HVmrhq4MX5Ah5ElQftxLS/ZkSZ9ZIBtPFNjSjvPC4g74NKC0/vCMrcayKBmgLD95n72QOY1dd2F7z0Zwge7rEg==
+  /@aws-cdk/aws-ec2/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-cloudwatch': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-logs': 1.47.0
+      '@aws-cdk/aws-s3': 1.47.0
+      '@aws-cdk/aws-ssm': 1.47.0
+      '@aws-cdk/cloud-assembly-schema': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      '@aws-cdk/cx-api': 1.47.0
+      '@aws-cdk/region-info': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-GH81MFJhSPu/ghCRjZf7tj+o4lc/TjHwPZMmB4V1bDRaHInESeFF+2H5YJz1J+d4zn9Gl5aSxtUFWdSFPaB5Jw==
+  /@aws-cdk/aws-ecr-assets/1.47.0:
+    bundledDependencies:
+      - minimatch
+    dependencies:
+      '@aws-cdk/assets': 1.47.0
+      '@aws-cdk/aws-ecr': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-s3': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      '@aws-cdk/cx-api': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-pnlE0jbRNym4ZJDF9dQcktjBMdRU4zMLIz8sUfJsB+WBY15i82pTHUPkBh627cfHfaarPziJxe3yDXri39ItKQ==
+  /@aws-cdk/aws-ecr/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-events': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      '@aws-cdk/custom-resources': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-FisieqXNiCC/KFr96oW0IfqERrGr6QXarQcVSUIZgMemlc2z71lNvf8OrzpD5wodZAAQGEXIuJkumGpUn/9vvA==
+  /@aws-cdk/aws-events/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-Okw4FTF1UVewOlXUnA0MOT+Ug3eQ2dntjBTig0s7XpB2JwWEHdCVVkeybgze+3vV9htoxsGQghiMm2o4efs56A==
+  /@aws-cdk/aws-iam/1.47.0:
+    dependencies:
+      '@aws-cdk/core': 1.47.0
+      '@aws-cdk/region-info': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-gqs9Z63qCo3PuR3ORAS8ZahDPLBNFXJypfKEUJ4FNDXH0Co/bmICtnFawQa9N9Cqhrdd935x2r9FH02M26/WnA==
+  /@aws-cdk/aws-kms/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-+g5NZHI6zLADftfo9SDIAWphHc88CSm7RYTTZ6b7eVOGZK5kYxYHPdU/YXaTIi74h3d8KTyC5dXVpXb1B5sIOw==
+  /@aws-cdk/aws-lambda/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-cloudwatch': 1.47.0
+      '@aws-cdk/aws-ec2': 1.47.0
+      '@aws-cdk/aws-events': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-logs': 1.47.0
+      '@aws-cdk/aws-s3': 1.47.0
+      '@aws-cdk/aws-s3-assets': 1.47.0
+      '@aws-cdk/aws-sqs': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      '@aws-cdk/cx-api': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-r/nt9S7KeEX7Ak6mKAXE1r/AEQIIBHP2NS6MOmph7nkW1CWZgvJK0fxdKrMDFgp6VFV/9+x0upXEYysOXjsfkQ==
+  /@aws-cdk/aws-logs/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-cloudwatch': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-Ni8Pxn005SUgZrxkK3U7MT7y+taET68Ks9rE7EQHYxhoncgA3pxI+eT+4IzCwRVdD2/K2io090UbZd0fZP9OIw==
+  /@aws-cdk/aws-s3-assets/1.47.0:
+    dependencies:
+      '@aws-cdk/assets': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/aws-s3': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      '@aws-cdk/cx-api': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-BcHGk5RmblEjmvXQ1fyPeLC58nSdpjuubQvvI1sJ7LSxOx7evZB5dZrDZH+7m+N+KszlWsIHYVUXpKBuEAT5bQ==
+  /@aws-cdk/aws-s3/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-events': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-HwH5cBYLaRKHeYix1HKlbXCC11ZYsm8IKgQaR/1qW2SBIivMEquFIJY3Y2bPiIt3cDt03gVWxvhPdk6/3Aw/nQ==
+  /@aws-cdk/aws-sam/1.47.0:
+    dependencies:
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-bOgmvPlQ8Vpw9mY4HYej+JBWyK7KtFFlXaG+efR7RTJKLicln8PjKKp15dn34kCM9o9VlDOVpXendsBPkyPNPA==
+  /@aws-cdk/aws-secretsmanager/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-ec2': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-sam': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-naaoBWA4Dy5gArMEzCPeJsrDcaoqYBmMLQBRgwMUvD5rwnM5nfE68E2WCW+9mPKOHWLjAa+VTOrDht9snDYmwA==
+  /@aws-cdk/aws-sns/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-cloudwatch': 1.47.0
+      '@aws-cdk/aws-events': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/aws-sqs': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-L6dk87X80cN9laxUVH7pzWRHde1M5maOpR8iUNJtTB5UtltDnw+B/5PLm/SI6IT1m8vT2dwntPIc+h6Q3IVbsQ==
+  /@aws-cdk/aws-sqs/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-cloudwatch': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-1JknoY/DRh/PP+mPcD7q4M/mD8GFVlTtmpWaiB6FUbs/Mfi6PbJGEBT3BDXic2t9U+twfP6ZF2Fxf6aLuTREFA==
+  /@aws-cdk/aws-ssm/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/cloud-assembly-schema': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-uA010mSU/2GZOUyarqfIQxW+7nxsQzXjOYpBJoOhFW9kk9cPkfBIPudIxcP/yXWofC5FwcEsg44aEzVljDuq1w==
+  /@aws-cdk/cloud-assembly-schema/1.47.0:
+    bundledDependencies:
+      - jsonschema
+      - semver
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-tlTCInqxS8eyztSraZxVdT+VnNX2EUNPifFNH5EOFUBCXo/18Ae/TgDl2XoioEurUha4Zvyepy7KscXMuGQY9Q==
+  /@aws-cdk/core/1.47.0:
+    bundledDependencies:
+      - fs-extra
+      - minimatch
+    dependencies:
+      '@aws-cdk/cloud-assembly-schema': 1.47.0
+      '@aws-cdk/cx-api': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-HgJlGLugaS0TbLMZ5hRmKdxfJk/GCu6LoQT60+3oisbSXTZDo1KCtlQaGYiR+4u/EVG5QIzUUKQpoQEwl/sEVg==
+  /@aws-cdk/custom-resources/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-cloudformation': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-logs': 1.47.0
+      '@aws-cdk/aws-sns': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-gNep91ZsIIqEMtvjBQVcfIZ5IbCDTFFExE8sHZlRDdJGoZioCn849iN3v9v8l65joA/047urb9oCTSyn32yscw==
+  /@aws-cdk/cx-api/1.47.0:
+    bundledDependencies:
+      - semver
+    dependencies:
+      '@aws-cdk/cloud-assembly-schema': 1.47.0
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-2VCRaA1LWOa/QoXuPEe+2efs5VsbF9U7mFL5DGUYv5NcOGD9MZY+t3xmrVh4ng7+shyI5XZxviSdAeqPPCgaVQ==
+  /@aws-cdk/region-info/1.47.0:
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-yfHKzHp7ZfCRzT34O7qskbsT6cymhVKZ0EoeXfBm27/O+5Qd7WH9qSPhRBICL/rwB3wY/s7fe5synRhajOH4Pg==
   /@babel/code-frame/7.10.3:
     dependencies:
       '@babel/highlight': 7.10.3
@@ -323,10 +638,30 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-+Ryf6g3BKoRc7jfp7ad8tM4TtMiaWvbF/1/sQcZPkkS7ag3D5nMBCe2UfOTONtAkaG0tO0ij3C5Lwmf1EiyjHg==
+  /aws-sdk/2.706.0:
+    dependencies:
+      buffer: 4.9.2
+      events: 1.1.1
+      ieee754: 1.1.13
+      jmespath: 0.15.0
+      querystring: 0.2.0
+      sax: 1.2.1
+      url: 0.10.3
+      uuid: 3.3.2
+      xml2js: 0.4.19
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    resolution:
+      integrity: sha512-7GT+yrB5Wb/zOReRdv/Pzkb2Qt+hz6B/8FGMVaoysX3NryHvQUdz7EQWi5yhg9CxOjKxdw5lFwYSs69YlSp1KA==
   /balanced-match/1.0.0:
     dev: false
     resolution:
       integrity: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
+  /base64-js/1.3.1:
+    dev: false
+    resolution:
+      integrity: sha512-mLQ4i2QO1ytvGWFWmcngKO//JXAQueZvwEKtjgQFM4jIK0kU+ytMfplL8j+n5mspOfjHwoAg+9yhb7BwAHm36g==
   /brace-expansion/1.1.11:
     dependencies:
       balanced-match: 1.0.0
@@ -334,6 +669,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
+  /buffer/4.9.2:
+    dependencies:
+      base64-js: 1.3.1
+      ieee754: 1.1.13
+      isarray: 1.0.0
+    dev: false
+    resolution:
+      integrity: sha512-xq+q3SRMOxGivLhBNaUdC64hDTQwejJ+H0T/NB1XMtTVEwNTrfFF3gAxiyW0Bu/xWEGhjVKgUcMhCrUy2+uCWg==
   /callsites/3.1.0:
     dev: false
     engines:
@@ -396,6 +739,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+  /constructs/3.0.4:
+    dev: false
+    engines:
+      node: '>= 10.3.0'
+    resolution:
+      integrity: sha512-CDvg7gMjphE3DFX4pzkF6j73NREbR8npPFW8Mx/CLRnMR035+Y1o1HrXIsNSss/dq3ZUnNTU9jKyd3fL9EOlfw==
   /core-js-pure/3.6.5:
     dev: false
     requiresBuild: true
@@ -649,6 +998,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
+  /events/1.1.1:
+    dev: false
+    engines:
+      node: '>=0.4.x'
+    resolution:
+      integrity: sha1-nr23Y1rQmccNzEwqH1AEKI6L2SQ=
   /fast-deep-equal/2.0.1:
     dev: false
     resolution:
@@ -766,6 +1121,10 @@ packages:
       node: '>= 0.4.0'
     resolution:
       integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
+  /ieee754/1.1.13:
+    dev: false
+    resolution:
+      integrity: sha512-4vf7I2LYV/HaWerSo3XmlMkp5eZ83i+/CDluXi/IGTs/O1sejBNhTtnxzmRZfvOUqj7lZjqHkeTvpgSFDlWZTg==
   /ignore/4.0.6:
     dev: false
     engines:
@@ -862,6 +1221,10 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-OwijhaRSgqvhm/0ZdAcXNZt9lYdKFpcRDT5ULUuYXPoT794UNOdU+gpT6Rzo7b4V2HUl/op6GqY894AZwv9faQ==
+  /isarray/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
   /isexe/2.0.0:
     dev: false
     resolution:
@@ -870,6 +1233,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-o6vicYryQaKykE+EpiWXDzia4yo=
+  /jmespath/0.15.0:
+    dev: false
+    engines:
+      node: '>= 0.6.0'
+    resolution:
+      integrity: sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=
   /js-tokens/4.0.0:
     dev: false
     resolution:
@@ -1080,12 +1449,22 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
+  /punycode/1.3.2:
+    dev: false
+    resolution:
+      integrity: sha1-llOgNvt8HuQjQvIyXM7v6jkmxI0=
   /punycode/2.1.1:
     dev: false
     engines:
       node: '>=6'
     resolution:
       integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+  /querystring/0.2.0:
+    dev: false
+    engines:
+      node: '>=0.4.x'
+    resolution:
+      integrity: sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
   /react-is/16.13.1:
     dev: false
     resolution:
@@ -1146,6 +1525,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-QKNmnzsHfR6UPURinhV91IAjvy4=
+  /sax/1.2.1:
+    dev: false
+    resolution:
+      integrity: sha1-e45lYZCyKOgaZq6nSEgNgozS03o=
   /semver/5.3.0:
     dev: false
     hasBin: true
@@ -1346,6 +1729,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==
+  /url/0.10.3:
+    dependencies:
+      punycode: 1.3.2
+      querystring: 0.2.0
+    dev: false
+    resolution:
+      integrity: sha1-Ah5NnHcF8hu/N9A861h2dAJ3TGQ=
+  /uuid/3.3.2:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
   /v8-compile-cache/2.1.1:
     dev: false
     resolution:
@@ -1383,6 +1778,19 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
+  /xml2js/0.4.19:
+    dependencies:
+      sax: 1.2.1
+      xmlbuilder: 9.0.7
+    dev: false
+    resolution:
+      integrity: sha512-esZnJZJOiJR9wWKMyuvSE1y6Dq5LCuJanqhxslH2bxM6duahNZ+HMpCLhBQGZkbX6xRf8x1Y2eJlgt2q3qo49Q==
+  /xmlbuilder/9.0.7:
+    dev: false
+    engines:
+      node: '>=4.0'
+    resolution:
+      integrity: sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
   /xregexp/4.3.0:
     dependencies:
       '@babel/runtime-corejs3': 7.10.3
@@ -1411,26 +1819,36 @@ packages:
     version: 0.0.0
   'file:projects/application-deployment.tgz':
     dependencies:
+      '@aws-cdk/aws-codebuild': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/aws-ssm': 1.47.0
+      '@aws-cdk/core': 1.47.0
       '@typescript-eslint/eslint-plugin': 3.4.0_15ebbbb8363c75064fc079244e83c2c7
       '@typescript-eslint/parser': 3.4.0_eslint@7.3.1+typescript@3.9.5
+      aws-sdk: 2.706.0
       eslint: 7.3.1
       typescript: 3.9.5
     dev: false
     name: '@rush-temp/application-deployment'
     resolution:
-      integrity: sha512-fgtn/3/iWpmD8W8M96dNjgKMJQOSqTYSxzBITVPt8gOIkAPpTF/MQhvP2vO0VGZ6fDTTBlg2fez3ECCp8nFQMQ==
+      integrity: sha512-jf49xTod1kJ/aumipvy8DONDEluzww7m0BLWjdE5gbflyV6iYKWACDOV6XjHfmX57wuTPd/v9UTi5Oqa+1S2gA==
       tarball: 'file:projects/application-deployment.tgz'
     version: 0.0.0
   'file:projects/ci-deployment.tgz':
     dependencies:
+      '@aws-cdk/aws-codebuild': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/aws-ssm': 1.47.0
+      '@aws-cdk/core': 1.47.0
       '@typescript-eslint/eslint-plugin': 3.4.0_15ebbbb8363c75064fc079244e83c2c7
       '@typescript-eslint/parser': 3.4.0_eslint@7.3.1+typescript@3.9.5
+      aws-sdk: 2.706.0
       eslint: 7.3.1
       typescript: 3.9.5
     dev: false
     name: '@rush-temp/ci-deployment'
     resolution:
-      integrity: sha512-8Fdkg45FpCL4zWuZ/KGjP7NMm6+xadNPVfQ7XeRCFvVTFvlToklEylhLNkEpZnqLOY2H8kAUb9tsDS2En54vIw==
+      integrity: sha512-ieeoUI+cGqM/NicmO4mxBmE5G62bEwPk5knza4VxTi0kc6vqEbeCI6ztjGElizmjiF5ssu1IZePfQdaYbN4VjA==
       tarball: 'file:projects/ci-deployment.tgz'
     version: 0.0.0
   'file:projects/eslint-config.tgz':
@@ -1466,6 +1884,10 @@ packages:
     version: 0.0.0
 registry: ''
 specifiers:
+  '@aws-cdk/aws-codebuild': ^1.47.0
+  '@aws-cdk/aws-kms': ^1.47.0
+  '@aws-cdk/aws-ssm': ^1.47.0
+  '@aws-cdk/core': ^1.47.0
   '@microsoft/api-extractor': ^7.8.15
   '@rush-temp/api-extractor-config': 'file:./projects/api-extractor-config.tgz'
   '@rush-temp/application-deployment': 'file:./projects/application-deployment.tgz'
@@ -1478,5 +1900,6 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^3.4.0
   '@typescript-eslint/parser': ^3.4.0
   '@typescript-eslint/typescript-estree': ^3.4.0
+  aws-sdk: ^2.706.0
   eslint: ^7.3.1
   typescript: ^3.9.5

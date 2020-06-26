@@ -9,6 +9,13 @@
   },
   "author": "",
   "license": "UNLICENSED",
+  "dependencies": {
+    "@aws-cdk/aws-codebuild": "^1.47.0",
+    "@aws-cdk/aws-kms": "^1.47.0",
+    "@aws-cdk/aws-ssm": "^1.47.0",
+    "@aws-cdk/core": "^1.47.0",
+    "aws-sdk": "^2.706.0"
+  },
   "devDependencies": {
     "@code-for-baltimore/api-extractor-config": "^0.0.1",
     "@code-for-baltimore/eslint-config": "^0.0.1",

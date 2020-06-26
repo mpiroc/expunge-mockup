@@ -3,6 +3,22 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@aws-cdk/aws-codebuild",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@aws-cdk/aws-kms",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@aws-cdk/aws-ssm",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@aws-cdk/core",
+      "allowedCategories": [ "tools" ]
+    },
+    {
       "name": "@code-for-baltimore/api-extractor-config",
       "allowedCategories": [ "tools" ]
     },
@@ -36,6 +52,10 @@
     },
     {
       "name": "@typescript-eslint/typescript-estree",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "aws-sdk",
       "allowedCategories": [ "tools" ]
     },
     {

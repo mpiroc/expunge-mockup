@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Common TypeScript configuration for @code-for-baltimore",
   "license": "UNLICENSED",
+  "scripts": {
+    "build": "echo \"Nothing to do\""
+  },
   "files": [
     "tsconfig.json"
   ],

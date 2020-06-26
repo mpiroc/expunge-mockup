@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Standard @microsoft/api-extractor configuration for @code-for-baltimore",
   "license": "UNLICENSED",
+  "scripts": {
+    "build": "echo \"Nothing to do\""
+  },
   "files": [
     "api-extractor.json"
   ],

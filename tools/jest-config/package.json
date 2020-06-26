@@ -3,7 +3,9 @@
     "version": "0.0.1",
     "description": "Standard Jest configuration for @code-for-baltimore",
     "license": "UNLICENSED",
-    "contributors": [],
+    "scripts": {
+        "build": "echo \"Nothing to do\""
+    },
     "files": [
         "jest-preset.json"
     ],

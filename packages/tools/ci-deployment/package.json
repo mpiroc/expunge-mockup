@@ -13,6 +13,7 @@
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
+    "aws-cdk": "^1.47.0",
     "@aws-cdk/aws-codebuild": "^1.47.0",
     "@aws-cdk/aws-kms": "^1.47.0",
     "@aws-cdk/aws-ssm": "^1.47.0",

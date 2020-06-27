@@ -55,6 +55,10 @@
       "allowedCategories": [ "tools" ]
     },
     {
+      "name": "aws-cdk",
+      "allowedCategories": [ "tools" ]
+    },
+    {
       "name": "aws-sdk",
       "allowedCategories": [ "tools" ]
     },

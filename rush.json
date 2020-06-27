@@ -362,12 +362,12 @@
    */
   "projects": [
     // Lambda Function Packages
-    {
-      "packageName": "@code-for-baltimore/add-subscription",
-      "projectFolder": "packages/lambda-functions/add-subscription",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
+    // {
+    //   "packageName": "@code-for-baltimore/add-subscription",
+    //   "projectFolder": "packages/lambda-functions/add-subscription",
+    //   "reviewCategory": "production",
+    //   "shouldPublish": false
+    // },
 
     // Config packages
     {

@@ -21,6 +21,7 @@
     "aws-sdk": "^2.706.0"
   },
   "devDependencies": {
+    "@types/node": "^14.0.14",
     "@code-for-baltimore/api-extractor-config": "^0.0.1",
     "@code-for-baltimore/eslint-config": "^0.0.1",
     "@code-for-baltimore/jest-config": "^0.0.1",

@@ -1,3 +1,6 @@
+out/
+*.tsbuildinfo
+
 # Logs
 *.log
 npm-debug.log*

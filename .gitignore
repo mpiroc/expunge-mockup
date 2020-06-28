@@ -1,5 +1,7 @@
 out/
+dist/
 *.tsbuildinfo
+.parcel-cache/
 
 # Logs
 *.log

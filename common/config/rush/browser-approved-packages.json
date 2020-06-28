@@ -23,6 +23,10 @@
       "allowedCategories": [ "tools" ]
     },
     {
+      "name": "@babel/core",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "@code-for-baltimore/api-extractor-config",
       "allowedCategories": [ "production", "tools" ]
     },
@@ -69,6 +73,10 @@
     {
       "name": "eslint",
       "allowedCategories": [ "production", "tools" ]
+    },
+    {
+      "name": "parcel",
+      "allowedCategories": [ "production" ]
     },
     {
       "name": "typescript",

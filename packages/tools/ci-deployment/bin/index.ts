@@ -4,7 +4,6 @@ import 'source-map-support/register'
 import * as cdk from '@aws-cdk/core'
 import { Pipeline } from '../lib'
 
-
 async function main(): Promise<void> {
     const app: cdk.App = new cdk.App()
     const stack: cdk.Stack = new cdk.Stack(app, `deployment`)
@@ -14,7 +13,7 @@ async function main(): Promise<void> {
         stack,
         repo,
         {
-            owner: `code-for-baltimore`,
+            owner: `mpiroc`,
             repo,
             branches: [
                 `master`
@@ -25,5 +24,5 @@ async function main(): Promise<void> {
 }
 
 /* eslint-disable @typescript-eslint/no-floating-promises */
-main()
+main().catch(console.error)
 /* eslint-enable @typescript-eslint/no-floating-promises */

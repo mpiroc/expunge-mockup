@@ -5,7 +5,7 @@ import { Pipeline } from '../lib'
 
 async function main(): Promise<void> {
     const app: cdk.App = new cdk.App()
-    const stack: cdk.Stack = new cdk.Stack(app, `deployment`)
+    const stack: cdk.Stack = new cdk.Stack(app, `expunge-ci`)
     const repo: string = `expunge-mockup`
 
     await Pipeline.create(

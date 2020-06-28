@@ -5,13 +5,17 @@
   "main": "lib/index.ts",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cdk": "cdk",
+    "deploy": "cdk deploy",
+    "synth": "cdk synth"
   },
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
     "@aws-cdk/aws-codebuild": "^1.47.0",
     "@aws-cdk/aws-kms": "^1.47.0",
+    "@aws-cdk/aws-lambda": "^1.47.0",
     "@aws-cdk/aws-ssm": "^1.47.0",
     "@aws-cdk/core": "^1.47.0",
     "aws-sdk": "^2.706.0"

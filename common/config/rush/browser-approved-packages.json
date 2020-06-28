@@ -11,6 +11,10 @@
       "allowedCategories": [ "tools" ]
     },
     {
+      "name": "@aws-cdk/aws-lambda",
+      "allowedCategories": [ "tools" ]
+    },
+    {
       "name": "@aws-cdk/aws-ssm",
       "allowedCategories": [ "tools" ]
     },

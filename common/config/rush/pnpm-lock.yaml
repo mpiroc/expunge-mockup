@@ -1,9 +1,11 @@
 dependencies:
   '@aws-cdk/aws-codebuild': 1.47.0
   '@aws-cdk/aws-kms': 1.47.0
+  '@aws-cdk/aws-lambda': 1.47.0
   '@aws-cdk/aws-ssm': 1.47.0
   '@aws-cdk/core': 1.47.0
   '@microsoft/api-extractor': 7.8.15
+  '@rush-temp/add-subscription': 'file:projects/add-subscription.tgz'
   '@rush-temp/api-extractor-config': 'file:projects/api-extractor-config.tgz'
   '@rush-temp/application-deployment': 'file:projects/application-deployment.tgz'
   '@rush-temp/ci-deployment': 'file:projects/ci-deployment.tgz'
@@ -2746,6 +2748,18 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-r+JdDipt93ttDjsOVPU5zaq5bAyY+3H19bDrThkvuVxC0xMQzU1PJcS6D+KrP3u96gH9XLomcHPb+2skoDjulQ==
+  'file:projects/add-subscription.tgz':
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 3.4.0_15ebbbb8363c75064fc079244e83c2c7
+      '@typescript-eslint/parser': 3.4.0_eslint@7.3.1+typescript@3.9.5
+      eslint: 7.3.1
+      typescript: 3.9.5
+    dev: false
+    name: '@rush-temp/add-subscription'
+    resolution:
+      integrity: sha512-RenNiGSSiEQcLMNxVW/bqYwp+l2nMim+eLkQmtwMlyJWINhlU67PfjR3cMI88r3/i1rTbhNem5Memfpv5+haVQ==
+      tarball: 'file:projects/add-subscription.tgz'
+    version: 0.0.0
   'file:projects/api-extractor-config.tgz':
     dependencies:
       '@microsoft/api-extractor': 7.8.15
@@ -2759,6 +2773,7 @@ packages:
     dependencies:
       '@aws-cdk/aws-codebuild': 1.47.0
       '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
       '@aws-cdk/aws-ssm': 1.47.0
       '@aws-cdk/core': 1.47.0
       '@typescript-eslint/eslint-plugin': 3.4.0_15ebbbb8363c75064fc079244e83c2c7
@@ -2769,7 +2784,7 @@ packages:
     dev: false
     name: '@rush-temp/application-deployment'
     resolution:
-      integrity: sha512-jf49xTod1kJ/aumipvy8DONDEluzww7m0BLWjdE5gbflyV6iYKWACDOV6XjHfmX57wuTPd/v9UTi5Oqa+1S2gA==
+      integrity: sha512-F0/CNFbdP8TvcsAfxuNh8Jadt5SDCzdHO+55/oqg/wfxmJaYr8gy2eeBEysOtxXuV6/83Q7M7FuOWaBEh1SBFg==
       tarball: 'file:projects/application-deployment.tgz'
     version: 0.0.0
   'file:projects/ci-deployment.tgz':
@@ -2826,9 +2841,11 @@ registry: ''
 specifiers:
   '@aws-cdk/aws-codebuild': ^1.47.0
   '@aws-cdk/aws-kms': ^1.47.0
+  '@aws-cdk/aws-lambda': ^1.47.0
   '@aws-cdk/aws-ssm': ^1.47.0
   '@aws-cdk/core': ^1.47.0
   '@microsoft/api-extractor': ^7.8.15
+  '@rush-temp/add-subscription': 'file:./projects/add-subscription.tgz'
   '@rush-temp/api-extractor-config': 'file:./projects/api-extractor-config.tgz'
   '@rush-temp/application-deployment': 'file:./projects/application-deployment.tgz'
   '@rush-temp/ci-deployment': 'file:./projects/ci-deployment.tgz'

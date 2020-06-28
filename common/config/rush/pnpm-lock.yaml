@@ -368,13 +368,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Ih9B/u7AtgEnySE2L2F0Xm0GaM729XqqLfHkalTsbjXGyqmf/6M0Cu0WpvqueUlW+xk88BHw9Nkpj49naU+vWw==
-  /@babel/runtime-corejs3/7.10.3:
-    dependencies:
-      core-js-pure: 3.6.5
-      regenerator-runtime: 0.13.5
-    dev: false
-    resolution:
-      integrity: sha512-HA7RPj5xvJxQl429r5Cxr2trJwOfPjKiqhCXcdQPSqO2G0RHPZpXu4fkYmBaTKCp2c/jRaMK9GB/lN+7zvvFPw==
   /@microsoft/api-extractor-model/7.8.11:
     dependencies:
       '@microsoft/tsdoc': 0.12.19
@@ -424,7 +417,7 @@ packages:
       '@typescript-eslint/typescript-estree': 3.4.0_typescript@3.9.5
       eslint: 7.3.1
       eslint-plugin-promise: 4.2.1
-      eslint-plugin-react: 7.20.0_eslint@7.3.1
+      eslint-plugin-react: 7.20.1_eslint@7.3.1
       eslint-plugin-security: 1.4.0
       eslint-plugin-tsdoc: 0.2.5
       typescript: 3.9.5
@@ -699,6 +692,16 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-c2VXaCHl7zPsvpkFsw4nxvFie4fh1ur9bpcgsVkIjqn0H/Xwdg+7fv3n2r/isyS8EBj5b06M9kHyZuIr4El6WQ==
+  /array.prototype.flatmap/1.2.3:
+    dependencies:
+      define-properties: 1.1.3
+      es-abstract: 1.17.6
+      function-bind: 1.1.1
+    dev: false
+    engines:
+      node: '>= 0.4'
+    resolution:
+      integrity: sha512-OOEk+lkePcg+ODXIpvuU9PAryCikCJyo7GlDG1upleEpQRx6mzL9puEBkozQ5iAx20KV0l3DbyQwqciJtqe5Pg==
   /ast-types/0.13.3:
     dev: false
     engines:
@@ -960,11 +963,6 @@ packages:
       node: '>= 10.3.0'
     resolution:
       integrity: sha512-CDvg7gMjphE3DFX4pzkF6j73NREbR8npPFW8Mx/CLRnMR035+Y1o1HrXIsNSss/dq3ZUnNTU9jKyd3fL9EOlfw==
-  /core-js-pure/3.6.5:
-    dev: false
-    requiresBuild: true
-    resolution:
-      integrity: sha512-lacdXOimsiD0QyNf9BC/mxivNJ/ybBGJXQFKzRekp1WTHoVUWsUHEn+2T8GJAzzIhyOuXA+gOxCVN3l+5PLPUA==
   /core-util-is/1.0.2:
     dev: false
     resolution:
@@ -1192,9 +1190,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-VoM09vT7bfA7D+upt+FjeBO5eHIJQBUWki1aPvB+vbNiHS3+oGIJGIeyBtKQTME6UPXXy3vV07OL1tHd3ANuDw==
-  /eslint-plugin-react/7.20.0_eslint@7.3.1:
+  /eslint-plugin-react/7.20.1_eslint@7.3.1:
     dependencies:
       array-includes: 3.1.1
+      array.prototype.flatmap: 1.2.3
       doctrine: 2.1.0
       eslint: 7.3.1
       has: 1.0.3
@@ -1205,14 +1204,13 @@ packages:
       prop-types: 15.7.2
       resolve: 1.17.0
       string.prototype.matchall: 4.0.2
-      xregexp: 4.3.0
     dev: false
     engines:
       node: '>=4'
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7
     resolution:
-      integrity: sha512-rqe1abd0vxMjmbPngo4NaYxTcR3Y4Hrmc/jg4T+sYz63yqlmJRknpEQfmWY+eDWPuMmix6iUIK+mv0zExjeLgA==
+      integrity: sha512-HitovDhscMmu3uOod3aqZRdKURdXgmlkptEue958gJBmIJO9hvgO4uZyqsJ4+22WqJVP3CsTKfqWSuTlJL6b8w==
   /eslint-plugin-security/1.4.0:
     dependencies:
       safe-regex: 1.1.0
@@ -2192,10 +2190,6 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
-  /regenerator-runtime/0.13.5:
-    dev: false
-    resolution:
-      integrity: sha512-ZS5w8CpKFinUzOwW3c83oPeVXoNsrLsaCoLtJvAClH135j/R77RuymhiSErhm2lKcwSCIpmvIWSbDkIfAqKQlA==
   /regexp.prototype.flags/1.3.0:
     dependencies:
       define-properties: 1.1.3
@@ -2690,12 +2684,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-UqY+VsoLhKfzpfPWGHLxJq16WUM=
-  /xregexp/4.3.0:
-    dependencies:
-      '@babel/runtime-corejs3': 7.10.3
-    dev: false
-    resolution:
-      integrity: sha512-7jXDIFXh5yJ/orPn4SXjuVrWWoi4Cr8jfV1eHv9CixKSbU+jY4mxfrBwAuDvupPNKpMUY+FeIqsVw/JLT9+B8g==
   /y18n/4.0.0:
     dev: false
     resolution:
@@ -2790,6 +2778,7 @@ packages:
       '@aws-cdk/aws-kms': 1.47.0
       '@aws-cdk/aws-ssm': 1.47.0
       '@aws-cdk/core': 1.47.0
+      '@types/node': 14.0.14
       '@typescript-eslint/eslint-plugin': 3.4.0_15ebbbb8363c75064fc079244e83c2c7
       '@typescript-eslint/parser': 3.4.0_eslint@7.3.1+typescript@3.9.5
       aws-cdk: 1.47.0
@@ -2799,7 +2788,7 @@ packages:
     dev: false
     name: '@rush-temp/ci-deployment'
     resolution:
-      integrity: sha512-KXZUrFAvBlaGuSif1I+oSfKc1yK9CsFLBxuDnK3+ryuAdIRPKumFqbFw7jcQFwbM5ISoTY1YCrSYEERKxIGHEA==
+      integrity: sha512-5RmdXH46uu5xTZo8qvGbc65/oIJaDGzpLiKBEPtZYdCBg5BdtVhK2GdLrmc3MXS/ZW4zShfVq1XuwvhoSW80LA==
       tarball: 'file:projects/ci-deployment.tgz'
     version: 0.0.0
   'file:projects/eslint-config.tgz':

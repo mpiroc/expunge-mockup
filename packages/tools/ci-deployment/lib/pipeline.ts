@@ -2,10 +2,7 @@ import * as cdk from '@aws-cdk/core'
 import * as codebuild from '@aws-cdk/aws-codebuild'
 import * as kms from '@aws-cdk/aws-kms'
 import * as ssm from '@aws-cdk/aws-ssm'
-import { KMS, config } from 'aws-sdk'
-
-const DEFAULT_REGION: string = `us-east-1`
-config.region = DEFAULT_REGION
+import * as aws from 'aws-sdk'
 
 /* eslint-disable no-new */
 
@@ -88,8 +85,8 @@ export class Pipeline extends cdk.Construct {
     }
 
     private static async _getDefaultKeyArn(): Promise<string> {
-        const client: KMS = new KMS()
-        const key: KMS.DescribeKeyResponse = await client.describeKey({ KeyId: `alias/aws/ssm` }).promise()
+        const client: aws.KMS = new aws.KMS()
+        const key: aws.KMS.DescribeKeyResponse = await client.describeKey({ KeyId: `alias/aws/ssm` }).promise()
         const keyArn: string | undefined = key.KeyMetadata?.Arn
         if (!keyArn) {
             throw new Error(`Could not get ARN for key 'alias/aws/ssm'`)

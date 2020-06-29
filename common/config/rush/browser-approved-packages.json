@@ -72,7 +72,7 @@
     },
     {
       "name": "aws-sdk",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "eslint",

@@ -27,6 +27,10 @@
       "allowedCategories": [ "production" ]
     },
     {
+      "name": "@code-for-baltimore/add-subscription",
+      "allowedCategories": [ "tools" ]
+    },
+    {
       "name": "@code-for-baltimore/api-extractor-config",
       "allowedCategories": [ "production", "tools" ]
     },

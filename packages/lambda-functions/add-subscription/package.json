@@ -4,7 +4,7 @@
   "description": "Lambda function that subscribes a the specified user to status updates for the specified case",
   "main": "dist/bin/index.js",
   "scripts": {
-    "build": "tsc && parcel build out/bin/index.js"
+    "build": "tsc && parcel build out/bin/index.js --no-minify"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",

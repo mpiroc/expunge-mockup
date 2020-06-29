@@ -19,6 +19,9 @@
   "peerDependencies": {
     "aws-sdk": "^2.706.0"
   },
+  "dependencies": {
+    "@code-for-baltimore/aws-clients": "^0.0.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@code-for-baltimore/api-extractor-config": "^0.0.1",

@@ -1,0 +1,6 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+    "extends": "./node_modules/@code-for-baltimore/api-extractor-config/api-extractor.json",
+  
+    "mainEntryPointFilePath": "<projectFolder>/out/lib/index.d.ts"
+}

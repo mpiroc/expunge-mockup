@@ -375,6 +375,14 @@
       "shouldPublish": false
     },
 
+    // Shared libraries used by lambda functions
+    {
+      "packageName": "@code-for-baltimore/aws-clients",
+      "projectFolder": "packages/shared/aws-clients",
+      "reviewCategory": "production",
+      "shouldPublish": false
+    },
+
     // Config packages
     {
       "packageName": "@code-for-baltimore/api-extractor-config",

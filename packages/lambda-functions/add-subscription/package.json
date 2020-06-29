@@ -2,9 +2,19 @@
   "name": "@code-for-baltimore/add-subscription",
   "version": "0.0.1",
   "description": "Lambda function that subscribes a the specified user to status updates for the specified case",
-  "main": "dist/bin/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc && parcel build out/bin/index.js --no-minify"
+    "build": "tsc && parcel build out/bin/index.js --no-minify --target lambda"
+  },
+  "targets": {
+    "lambda": {
+      "context": "node",
+      "engines": {
+        "node": ">=12.x"
+      },
+      "isLibrary": true,
+      "includeNodeModules": false
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",

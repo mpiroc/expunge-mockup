@@ -20,3 +20,18 @@ export class SqsClient implements ISqsClient {
         }
     }
 }
+
+export function formatInputQueueUrlKey(packageName: string): string {
+    return `INPUT_QUEUE_URL_${packageName}`
+}
+
+export function getInputQueueUrl(packageName: string): string {
+    const targetQueueUrlKey: string = `INPUT_QUEUE_URL_${packageName}`
+    const queueUrl: string | undefined = process.env[targetQueueUrlKey]
+
+    if (!queueUrl) {
+        throw new Error(`Could not get input queue url for package ${packageName}. Ensure that environment variable ${targetQueueUrlKey} is set.`)
+    }
+
+    return queueUrl
+}

@@ -3,6 +3,7 @@ dependencies:
   '@aws-cdk/aws-iam': 1.47.0
   '@aws-cdk/aws-kms': 1.47.0
   '@aws-cdk/aws-lambda': 1.47.0
+  '@aws-cdk/aws-lambda-event-sources': 1.47.0
   '@aws-cdk/aws-sqs': 1.47.0
   '@aws-cdk/aws-ssm': 1.47.0
   '@aws-cdk/core': 1.47.0
@@ -39,6 +40,59 @@ packages:
       node: '>= 10.13.0 <13 || >=13.7.0'
     resolution:
       integrity: sha512-CZOzfiyrsEY5WM37mwDMd6y3hrUo0APoQtZwNu5JTQAHW28oyMreKvRuJ2UdSTtp9J8d5bG/vUZbGvgHwFd1pQ==
+  /@aws-cdk/aws-apigateway/1.47.0:
+    dependencies:
+      '@aws-cdk/assets': 1.47.0
+      '@aws-cdk/aws-certificatemanager': 1.47.0
+      '@aws-cdk/aws-ec2': 1.47.0
+      '@aws-cdk/aws-elasticloadbalancingv2': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-logs': 1.47.0
+      '@aws-cdk/aws-s3': 1.47.0
+      '@aws-cdk/aws-s3-assets': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      '@aws-cdk/cx-api': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-JG07BAp5S+lsfu/tK9bU19ujmZ1enLzbXDhcuJmnfTZ0xgp9rgwVyIXOWZ92KyPR4NHQ6H4qTdLhHuOx0+dt/A==
+  /@aws-cdk/aws-applicationautoscaling/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-autoscaling-common': 1.47.0
+      '@aws-cdk/aws-cloudwatch': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-cYl0o8IHqlrEjH1G1UOR1Y2Ft3KwdQymB8mbClsR5y6ciGIJRxP5REDx2ZrHJElHT1WCFs50M5X2lgnIWUikrg==
+  /@aws-cdk/aws-autoscaling-common/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-BbP49pu9lZA4ICAYdAbGkeORYieUHPrLWB+p4uhv1oG6nMj0CsYn9WugumMrNZrjvqee6hAHL/UZWHMN7bapbA==
+  /@aws-cdk/aws-certificatemanager/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-route53': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-j6NTqX67A06zo6wovEvO4CgKgrdhE9fQ3Rp6vhi2WXq4egtq5OU4Pwngmdc4QkxQ5lR5iVr0dOwOGE6ujmML+A==
   /@aws-cdk/aws-cloudformation/1.47.0:
     dependencies:
       '@aws-cdk/aws-iam': 1.47.0
@@ -95,6 +149,21 @@ packages:
       node: '>= 10.13.0 <13 || >=13.7.0'
     resolution:
       integrity: sha512-HVmrhq4MX5Ah5ElQftxLS/ZkSZ9ZIBtPFNjSjvPC4g74NKC0/vCMrcayKBmgLD95n72QOY1dd2F7z0Zwge7rEg==
+  /@aws-cdk/aws-dynamodb/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-applicationautoscaling': 1.47.0
+      '@aws-cdk/aws-cloudwatch': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      '@aws-cdk/custom-resources': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-dKk3ZujtOPahUq6hynN7dj4L7XbShhuIuqcsKKz9D1B8uZS/PryCvuVN98r+tp5BZ3P4ikchMdyjC0LFp4qqGg==
   /@aws-cdk/aws-ec2/1.47.0:
     dependencies:
       '@aws-cdk/aws-cloudwatch': 1.47.0
@@ -141,6 +210,21 @@ packages:
       node: '>= 10.13.0 <13 || >=13.7.0'
     resolution:
       integrity: sha512-FisieqXNiCC/KFr96oW0IfqERrGr6QXarQcVSUIZgMemlc2z71lNvf8OrzpD5wodZAAQGEXIuJkumGpUn/9vvA==
+  /@aws-cdk/aws-elasticloadbalancingv2/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-certificatemanager': 1.47.0
+      '@aws-cdk/aws-cloudwatch': 1.47.0
+      '@aws-cdk/aws-ec2': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-s3': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-YRUQI5lIMZpB0gXkNZHqOGQ9CxeyegYkNPwR3UmoMJhsbAMcBULOGKaN3VjlIx1CkJDFiF7aNi7eIgbvGybQbw==
   /@aws-cdk/aws-events/1.47.0:
     dependencies:
       '@aws-cdk/aws-iam': 1.47.0
@@ -161,6 +245,18 @@ packages:
       node: '>= 10.13.0 <13 || >=13.7.0'
     resolution:
       integrity: sha512-gqs9Z63qCo3PuR3ORAS8ZahDPLBNFXJypfKEUJ4FNDXH0Co/bmICtnFawQa9N9Cqhrdd935x2r9FH02M26/WnA==
+  /@aws-cdk/aws-kinesis/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-kms': 1.47.0
+      '@aws-cdk/aws-logs': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-h4zX2/EaU6JbklUCRryFi6j2h9kwXErvm9tP2l52QP5CMXpumiZowTV9bZXElIPT60Bow783DnLSb8pt8Oi94Q==
   /@aws-cdk/aws-kms/1.47.0:
     dependencies:
       '@aws-cdk/aws-iam': 1.47.0
@@ -171,6 +267,26 @@ packages:
       node: '>= 10.13.0 <13 || >=13.7.0'
     resolution:
       integrity: sha512-+g5NZHI6zLADftfo9SDIAWphHc88CSm7RYTTZ6b7eVOGZK5kYxYHPdU/YXaTIi74h3d8KTyC5dXVpXb1B5sIOw==
+  /@aws-cdk/aws-lambda-event-sources/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-apigateway': 1.47.0
+      '@aws-cdk/aws-dynamodb': 1.47.0
+      '@aws-cdk/aws-events': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-kinesis': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-s3': 1.47.0
+      '@aws-cdk/aws-s3-notifications': 1.47.0
+      '@aws-cdk/aws-sns': 1.47.0
+      '@aws-cdk/aws-sns-subscriptions': 1.47.0
+      '@aws-cdk/aws-sqs': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-FmabZOyDAT/wYWa8TRV1zU9VhkPOmxFKAEIp04wtdQT1GwZbvaRaMN3jKvdKRQXAzc5N/3Fe7LJUZqwSZhS0nA==
   /@aws-cdk/aws-lambda/1.47.0:
     dependencies:
       '@aws-cdk/aws-cloudwatch': 1.47.0
@@ -200,6 +316,18 @@ packages:
       node: '>= 10.13.0 <13 || >=13.7.0'
     resolution:
       integrity: sha512-Ni8Pxn005SUgZrxkK3U7MT7y+taET68Ks9rE7EQHYxhoncgA3pxI+eT+4IzCwRVdD2/K2io090UbZd0fZP9OIw==
+  /@aws-cdk/aws-route53/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-ec2': 1.47.0
+      '@aws-cdk/aws-logs': 1.47.0
+      '@aws-cdk/cloud-assembly-schema': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-sHrP/3R/yydKrYzNYfXsATMjBjmE3F0MM0qVnPpEcbPJWuz2ZkXrS2bujkyovJP/N0Sp+BiLz6La2mwii+9tyA==
   /@aws-cdk/aws-s3-assets/1.47.0:
     dependencies:
       '@aws-cdk/assets': 1.47.0
@@ -214,6 +342,20 @@ packages:
       node: '>= 10.13.0 <13 || >=13.7.0'
     resolution:
       integrity: sha512-BcHGk5RmblEjmvXQ1fyPeLC58nSdpjuubQvvI1sJ7LSxOx7evZB5dZrDZH+7m+N+KszlWsIHYVUXpKBuEAT5bQ==
+  /@aws-cdk/aws-s3-notifications/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-s3': 1.47.0
+      '@aws-cdk/aws-sns': 1.47.0
+      '@aws-cdk/aws-sqs': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-fFsHnJW+AiL9bGQ6+V0cJt2r73Zf7hAnbCy7pdxQewaOmN9ysIQy0w1ShjRAUV+pav5I9lN6gi8c5WONUCNK8g==
   /@aws-cdk/aws-s3/1.47.0:
     dependencies:
       '@aws-cdk/aws-events': 1.47.0
@@ -249,6 +391,19 @@ packages:
       node: '>= 10.13.0 <13 || >=13.7.0'
     resolution:
       integrity: sha512-naaoBWA4Dy5gArMEzCPeJsrDcaoqYBmMLQBRgwMUvD5rwnM5nfE68E2WCW+9mPKOHWLjAa+VTOrDht9snDYmwA==
+  /@aws-cdk/aws-sns-subscriptions/1.47.0:
+    dependencies:
+      '@aws-cdk/aws-iam': 1.47.0
+      '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-sns': 1.47.0
+      '@aws-cdk/aws-sqs': 1.47.0
+      '@aws-cdk/core': 1.47.0
+      constructs: 3.0.4
+    dev: false
+    engines:
+      node: '>= 10.13.0 <13 || >=13.7.0'
+    resolution:
+      integrity: sha512-mInBEEooehSj13+pzphefniMKTMY9hqY0l4loM7Bir8EZQRahK2jyGNXioeMGR120wQQHVljQWxOVXepL0oLog==
   /@aws-cdk/aws-sns/1.47.0:
     dependencies:
       '@aws-cdk/aws-cloudwatch': 1.47.0
@@ -8648,7 +8803,7 @@ packages:
     dev: false
     name: '@rush-temp/add-subscription'
     resolution:
-      integrity: sha512-rYtQXRxfmj4bM+O3ir5YSGqcq/Ss5Xr2MhYUqupfRHjrIT/8Tq8n4GOd8AxZIWZ3MREKgdgWI7ycXJqbtl6wOg==
+      integrity: sha512-RREuIpCcaWXmanCKGiu/bXV+PZD2H0j75mcU9Duz5scDw6E1/7gHicXI72QGm2Hdo4aprnl2zcgMYt8Pq3piuw==
       tarball: 'file:projects/add-subscription.tgz'
     version: 0.0.0
   'file:projects/api-extractor-config.tgz':
@@ -8666,6 +8821,7 @@ packages:
       '@aws-cdk/aws-iam': 1.47.0
       '@aws-cdk/aws-kms': 1.47.0
       '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-lambda-event-sources': 1.47.0
       '@aws-cdk/aws-sqs': 1.47.0
       '@aws-cdk/aws-ssm': 1.47.0
       '@aws-cdk/core': 1.47.0
@@ -8678,11 +8834,12 @@ packages:
     dev: false
     name: '@rush-temp/application-deployment'
     resolution:
-      integrity: sha512-XokLoiRVExEaqmeZCYlRXFD5HvpwcBjox7/uPdOhS7alijLennC5X6uXokCQatspPerLOQXjtd6bV4smP6Xy6A==
+      integrity: sha512-l4psqcQOEIKwQ2t3LA6pgHP9FH+FtpZJJHOnmyItWvbC9fTOAawE0jMOX+dwDqWM7idpA7faGE3KJh/MlMfwHA==
       tarball: 'file:projects/application-deployment.tgz'
     version: 0.0.0
   'file:projects/aws-clients.tgz':
     dependencies:
+      '@types/node': 14.0.14
       '@typescript-eslint/eslint-plugin': 3.5.0_65f44fdb31e331ad1d8edb13f8ed8a6c
       '@typescript-eslint/parser': 3.5.0_eslint@7.3.1+typescript@3.9.5
       aws-sdk: 2.707.0
@@ -8691,7 +8848,7 @@ packages:
     dev: false
     name: '@rush-temp/aws-clients'
     resolution:
-      integrity: sha512-l3ZjIik6Sj8sDA6vE4R/MHzUBH1UrOLywHdmcKkJD65/uMcWYtZz943OQMweNyC1kc49StN/fZ8fDsCuqUhNRA==
+      integrity: sha512-QeEakcZiJUUTztmDAlgpQaE/6WF0FPblpVxHrGmdRrbomOagY0AuLTiv1ZA5PnPyWGD9t7Bd5NjoEE5I5giDHA==
       tarball: 'file:projects/aws-clients.tgz'
     version: 0.0.0
   'file:projects/ci-deployment.tgz':
@@ -8726,7 +8883,7 @@ packages:
     dev: false
     name: '@rush-temp/enqueue-updates'
     resolution:
-      integrity: sha512-WOs92i1BaBPUP/YWaUFIaOsOn58SRfOOMjYBk2MQNTiO/NE9rM2PBdq9QaNlEWrqQl1Q0K9Z6AU9OMfu3ks92Q==
+      integrity: sha512-p0JNjJh6XL/Z2O/ihuaxIseztYmf14XFeVCzCHLPp+jMkd86wCwYSuH6Zw0ppYxf1HA1zsGHfxEVhi5iAvhqDQ==
       tarball: 'file:projects/enqueue-updates.tgz'
     version: 0.0.0
   'file:projects/eslint-config.tgz':
@@ -8766,6 +8923,7 @@ specifiers:
   '@aws-cdk/aws-iam': ^1.47.0
   '@aws-cdk/aws-kms': ^1.47.0
   '@aws-cdk/aws-lambda': ^1.47.0
+  '@aws-cdk/aws-lambda-event-sources': ^1.47.0
   '@aws-cdk/aws-sqs': ^1.47.0
   '@aws-cdk/aws-ssm': ^1.47.0
   '@aws-cdk/core': ^1.47.0

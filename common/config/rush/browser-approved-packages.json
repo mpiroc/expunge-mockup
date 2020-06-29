@@ -19,6 +19,10 @@
       "allowedCategories": [ "tools" ]
     },
     {
+      "name": "@aws-cdk/aws-lambda-event-sources",
+      "allowedCategories": [ "tools" ]
+    },
+    {
       "name": "@aws-cdk/aws-sqs",
       "allowedCategories": [ "tools" ]
     },

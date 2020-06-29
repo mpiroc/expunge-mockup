@@ -1,2 +1,2 @@
-export * from './function-with-input-queue'
+export * from './expunge-stack'
 

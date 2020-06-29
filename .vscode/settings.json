@@ -3,7 +3,9 @@
         "**/node_modules": true,
         "**/.rush": true,
         "**/out": true,
+        "**/dist": true,
         "**/common/temp": true,
+        "**/.parcel-cache": true,
 
         "**/.git": true,
         "**/.svn": true,

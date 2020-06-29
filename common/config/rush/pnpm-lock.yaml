@@ -10,6 +10,7 @@ dependencies:
   '@rush-temp/api-extractor-config': 'file:projects/api-extractor-config.tgz'
   '@rush-temp/application-deployment': 'file:projects/application-deployment.tgz'
   '@rush-temp/ci-deployment': 'file:projects/ci-deployment.tgz'
+  '@rush-temp/enqueue-updates': 'file:projects/enqueue-updates.tgz'
   '@rush-temp/eslint-config': 'file:projects/eslint-config.tgz'
   '@rush-temp/jest-config': 'file:projects/jest-config.tgz'
   '@rush-temp/ts-config': 'file:projects/ts-config.tgz'
@@ -8528,15 +8529,17 @@ packages:
   'file:projects/add-subscription.tgz':
     dependencies:
       '@babel/core': 7.10.3
+      '@types/node': 14.0.14
       '@typescript-eslint/eslint-plugin': 3.4.0_15ebbbb8363c75064fc079244e83c2c7
       '@typescript-eslint/parser': 3.4.0_eslint@7.3.1+typescript@3.9.5
+      aws-sdk: 2.706.0
       eslint: 7.3.1
       parcel: 2.0.0-nightly.318
       typescript: 3.9.5
     dev: false
     name: '@rush-temp/add-subscription'
     resolution:
-      integrity: sha512-KUnseP7MF/goPyP6imnKRgd7p9qImongxEGggOavyXUv3hiF1LbbXJh5sesWQkdF5GnaI1zoInDgd47ccVZdpg==
+      integrity: sha512-rYtQXRxfmj4bM+O3ir5YSGqcq/Ss5Xr2MhYUqupfRHjrIT/8Tq8n4GOd8AxZIWZ3MREKgdgWI7ycXJqbtl6wOg==
       tarball: 'file:projects/add-subscription.tgz'
     version: 0.0.0
   'file:projects/api-extractor-config.tgz':
@@ -8555,6 +8558,7 @@ packages:
       '@aws-cdk/aws-lambda': 1.47.0
       '@aws-cdk/aws-ssm': 1.47.0
       '@aws-cdk/core': 1.47.0
+      '@types/node': 14.0.14
       '@typescript-eslint/eslint-plugin': 3.4.0_15ebbbb8363c75064fc079244e83c2c7
       '@typescript-eslint/parser': 3.4.0_eslint@7.3.1+typescript@3.9.5
       aws-sdk: 2.706.0
@@ -8563,7 +8567,7 @@ packages:
     dev: false
     name: '@rush-temp/application-deployment'
     resolution:
-      integrity: sha512-F0/CNFbdP8TvcsAfxuNh8Jadt5SDCzdHO+55/oqg/wfxmJaYr8gy2eeBEysOtxXuV6/83Q7M7FuOWaBEh1SBFg==
+      integrity: sha512-QvcIMj3Vaj49kq5tmkbSxKm9DZycz1IMxL0Nl6NYA0XvpS8jlruttvaoLB8SZFH5rsQJCpChfMF0F5eHP7tb8A==
       tarball: 'file:projects/application-deployment.tgz'
     version: 0.0.0
   'file:projects/ci-deployment.tgz':
@@ -8584,6 +8588,22 @@ packages:
     resolution:
       integrity: sha512-5RmdXH46uu5xTZo8qvGbc65/oIJaDGzpLiKBEPtZYdCBg5BdtVhK2GdLrmc3MXS/ZW4zShfVq1XuwvhoSW80LA==
       tarball: 'file:projects/ci-deployment.tgz'
+    version: 0.0.0
+  'file:projects/enqueue-updates.tgz':
+    dependencies:
+      '@babel/core': 7.10.3
+      '@types/node': 14.0.14
+      '@typescript-eslint/eslint-plugin': 3.4.0_15ebbbb8363c75064fc079244e83c2c7
+      '@typescript-eslint/parser': 3.4.0_eslint@7.3.1+typescript@3.9.5
+      aws-sdk: 2.706.0
+      eslint: 7.3.1
+      parcel: 2.0.0-nightly.318
+      typescript: 3.9.5
+    dev: false
+    name: '@rush-temp/enqueue-updates'
+    resolution:
+      integrity: sha512-WOs92i1BaBPUP/YWaUFIaOsOn58SRfOOMjYBk2MQNTiO/NE9rM2PBdq9QaNlEWrqQl1Q0K9Z6AU9OMfu3ks92Q==
+      tarball: 'file:projects/enqueue-updates.tgz'
     version: 0.0.0
   'file:projects/eslint-config.tgz':
     dependencies:
@@ -8629,6 +8649,7 @@ specifiers:
   '@rush-temp/api-extractor-config': 'file:./projects/api-extractor-config.tgz'
   '@rush-temp/application-deployment': 'file:./projects/application-deployment.tgz'
   '@rush-temp/ci-deployment': 'file:./projects/ci-deployment.tgz'
+  '@rush-temp/enqueue-updates': 'file:./projects/enqueue-updates.tgz'
   '@rush-temp/eslint-config': 'file:./projects/eslint-config.tgz'
   '@rush-temp/jest-config': 'file:./projects/jest-config.tgz'
   '@rush-temp/ts-config': 'file:./projects/ts-config.tgz'

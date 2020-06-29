@@ -368,6 +368,12 @@
       "reviewCategory": "production",
       "shouldPublish": false
     },
+    {
+      "packageName": "@code-for-baltimore/enqueue-updates",
+      "projectFolder": "packages/lambda-functions/enqueue-updates",
+      "reviewCategory": "production",
+      "shouldPublish": false
+    },
 
     // Config packages
     {

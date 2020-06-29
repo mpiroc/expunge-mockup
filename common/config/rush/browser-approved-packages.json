@@ -7,11 +7,19 @@
       "allowedCategories": [ "tools" ]
     },
     {
+      "name": "@aws-cdk/aws-iam",
+      "allowedCategories": [ "tools" ]
+    },
+    {
       "name": "@aws-cdk/aws-kms",
       "allowedCategories": [ "tools" ]
     },
     {
       "name": "@aws-cdk/aws-lambda",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@aws-cdk/aws-sqs",
       "allowedCategories": [ "tools" ]
     },
     {
@@ -33,6 +41,10 @@
     {
       "name": "@code-for-baltimore/api-extractor-config",
       "allowedCategories": [ "production", "tools" ]
+    },
+    {
+      "name": "@code-for-baltimore/enqueue-updates",
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "@code-for-baltimore/eslint-config",

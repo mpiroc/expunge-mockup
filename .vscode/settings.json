@@ -6,6 +6,7 @@
         "**/dist": true,
         "**/common/temp": true,
         "**/.parcel-cache": true,
+        "**/cdk.out": true,
 
         "**/.git": true,
         "**/.svn": true,

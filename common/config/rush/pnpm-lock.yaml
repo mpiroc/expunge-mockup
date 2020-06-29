@@ -1,7 +1,9 @@
 dependencies:
   '@aws-cdk/aws-codebuild': 1.47.0
+  '@aws-cdk/aws-iam': 1.47.0
   '@aws-cdk/aws-kms': 1.47.0
   '@aws-cdk/aws-lambda': 1.47.0
+  '@aws-cdk/aws-sqs': 1.47.0
   '@aws-cdk/aws-ssm': 1.47.0
   '@aws-cdk/core': 1.47.0
   '@babel/core': 7.10.3
@@ -8554,8 +8556,10 @@ packages:
   'file:projects/application-deployment.tgz':
     dependencies:
       '@aws-cdk/aws-codebuild': 1.47.0
+      '@aws-cdk/aws-iam': 1.47.0
       '@aws-cdk/aws-kms': 1.47.0
       '@aws-cdk/aws-lambda': 1.47.0
+      '@aws-cdk/aws-sqs': 1.47.0
       '@aws-cdk/aws-ssm': 1.47.0
       '@aws-cdk/core': 1.47.0
       '@types/node': 14.0.14
@@ -8567,7 +8571,7 @@ packages:
     dev: false
     name: '@rush-temp/application-deployment'
     resolution:
-      integrity: sha512-QvcIMj3Vaj49kq5tmkbSxKm9DZycz1IMxL0Nl6NYA0XvpS8jlruttvaoLB8SZFH5rsQJCpChfMF0F5eHP7tb8A==
+      integrity: sha512-XokLoiRVExEaqmeZCYlRXFD5HvpwcBjox7/uPdOhS7alijLennC5X6uXokCQatspPerLOQXjtd6bV4smP6Xy6A==
       tarball: 'file:projects/application-deployment.tgz'
     version: 0.0.0
   'file:projects/ci-deployment.tgz':
@@ -8639,8 +8643,10 @@ packages:
 registry: ''
 specifiers:
   '@aws-cdk/aws-codebuild': ^1.47.0
+  '@aws-cdk/aws-iam': ^1.47.0
   '@aws-cdk/aws-kms': ^1.47.0
   '@aws-cdk/aws-lambda': ^1.47.0
+  '@aws-cdk/aws-sqs': ^1.47.0
   '@aws-cdk/aws-ssm': ^1.47.0
   '@aws-cdk/core': ^1.47.0
   '@babel/core': ^7.10.3

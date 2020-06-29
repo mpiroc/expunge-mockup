@@ -1,2 +1,2 @@
-export { LambdaPackage, ILambdaPackageProps } from './lambda-package'
+export * from './function-with-input-queue'
 

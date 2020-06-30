@@ -2,7 +2,7 @@
   "name": "@code-for-baltimore/aws-clients",
   "version": "0.0.1",
   "description": "Wrappers for AWS clients to simplify API and enable client mocking",
-  "main": "lib/index.ts",
+  "main": "out/lib/index.js",
   "scripts": {
     "build": "tsc"
   },

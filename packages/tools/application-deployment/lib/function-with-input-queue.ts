@@ -6,8 +6,10 @@ import * as sqs from '@aws-cdk/aws-sqs'
 import * as path from 'path'
 import { formatInputQueueUrlKey } from '@code-for-baltimore/utils'
 
-export interface IFunctionWithInputQueueProps extends Pick<lambda.FunctionProps, 'handler' | 'runtime'>{
+export interface IFunctionWithInputQueueProps {
     packageName: string
+    handlerFunctionName: string,
+    runtime: lambda.Runtime
 }
 
 export class FunctionWithInputQueue extends cdk.Construct {
@@ -15,20 +17,26 @@ export class FunctionWithInputQueue extends cdk.Construct {
     private readonly _function: lambda.Function
     private readonly _inputQueue: sqs.IQueue
 
-    public constructor(scope: cdk.Construct, id: string, { runtime, handler, packageName }: IFunctionWithInputQueueProps) {
+    public constructor(scope: cdk.Construct, id: string, {
+        runtime,
+        handlerFunctionName,
+        packageName
+    }: IFunctionWithInputQueueProps) {
         super(scope, id)
 
         this._packageName = packageName
 
-        const bundlePath = path.dirname(require.resolve(packageName))
+        const bundlePath = require.resolve(packageName)
+        const bundleFile = path.basename(bundlePath, path.extname(bundlePath))
+
         if (!bundlePath) {
             throw new Error(`Could not find bundle for package ${packageName}. Did you forget to add it as a dependency of the deployment package?`)
         }
 
         this._function = new lambda.Function(this, `function`, {
-            runtime,
-            handler,
-            code: lambda.Code.fromAsset(bundlePath)
+            code: lambda.Code.fromAsset(path.dirname(bundlePath)),
+            handler: `${bundleFile}.${handlerFunctionName}`,
+            runtime
         })
 
         this._inputQueue = new sqs.Queue(this, `input-queue`, {

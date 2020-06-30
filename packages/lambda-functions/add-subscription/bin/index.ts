@@ -1,12 +1,12 @@
 import * as aws from 'aws-sdk'
 import { ISqsClient, SqsClient } from '@code-for-baltimore/aws-clients'
 import { getInputQueueUrl } from '@code-for-baltimore/utils'
-// import {  } from '@code-for-baltimore/events'
+import { IEvent } from '@code-for-baltimore/events'
 
 // Re-use client for warm-start invocations.
 const sqs: ISqsClient = new SqsClient(new aws.SQS())
 
-export async function handler(event: unknown): Promise<void> {
+export async function handler(event: IEvent): Promise<void> {
     console.log(`Hello, add-subscription!`)
     console.log(`Region: ${aws.config.region}`)
 

@@ -9,12 +9,12 @@ export class ExpungeStack extends cdk.Stack {
         const addSubscriptionPackage = new FunctionWithInputQueue(this, `add-subscription`, {
             packageName: `@code-for-baltimore/add-subscription`,
             runtime: lambda.Runtime.NODEJS_12_X,
-            handler: `index.handler`
+            handlerFunctionName: `handler`
         })
         const enqueueUpdatesPackage = new FunctionWithInputQueue(this, `enqueue-updates`, {
             packageName: `@code-for-baltimore/enqueue-updates`,
             runtime: lambda.Runtime.NODEJS_12_X,
-            handler: `index.handler`
+            handlerFunctionName: `handler`
         })
     
         enqueueUpdatesPackage.grantSendMessages(addSubscriptionPackage)

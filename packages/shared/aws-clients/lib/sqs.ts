@@ -32,7 +32,7 @@ function sanitizeEnvVarKey(key: string): string {
         throw new Error(`Cannot sanitize environment variable key '${key}': Environment variable keys must start with a letter.`)
     }
 
-    return key.replace(/[^a-zA-Z0-9_]/, '_')
+    return key.replace(/[^a-zA-Z0-9_]/g, '_')
 }
 
 export function formatInputQueueUrlKey(packageName: string): string {

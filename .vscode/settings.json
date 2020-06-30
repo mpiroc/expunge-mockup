@@ -3,7 +3,7 @@
         "**/node_modules": true,
         "**/.rush": true,
         "**/out": true,
-        // "**/dist": true,
+        "**/dist": true,
         "**/common/temp": true,
         "**/.parcel-cache": true,
         "**/cdk.out": true,

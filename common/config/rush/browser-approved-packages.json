@@ -59,11 +59,19 @@
       "allowedCategories": [ "production", "tools" ]
     },
     {
+      "name": "@code-for-baltimore/events",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "@code-for-baltimore/jest-config",
       "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "@code-for-baltimore/ts-config",
+      "allowedCategories": [ "production", "tools" ]
+    },
+    {
+      "name": "@code-for-baltimore/utils",
       "allowedCategories": [ "production", "tools" ]
     },
     {

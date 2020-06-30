@@ -4,7 +4,7 @@ import * as lambda from '@aws-cdk/aws-lambda'
 import { SqsEventSource } from '@aws-cdk/aws-lambda-event-sources'
 import * as sqs from '@aws-cdk/aws-sqs'
 import * as path from 'path'
-import { formatInputQueueUrlKey } from '@code-for-baltimore/aws-clients'
+import { formatInputQueueUrlKey } from '@code-for-baltimore/utils'
 
 export interface IFunctionWithInputQueueProps extends Pick<lambda.FunctionProps, 'handler' | 'runtime'>{
     packageName: string

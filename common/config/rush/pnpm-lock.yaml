@@ -16,8 +16,10 @@ dependencies:
   '@rush-temp/ci-deployment': 'file:projects/ci-deployment.tgz'
   '@rush-temp/enqueue-updates': 'file:projects/enqueue-updates.tgz'
   '@rush-temp/eslint-config': 'file:projects/eslint-config.tgz'
+  '@rush-temp/events': 'file:projects/events.tgz'
   '@rush-temp/jest-config': 'file:projects/jest-config.tgz'
   '@rush-temp/ts-config': 'file:projects/ts-config.tgz'
+  '@rush-temp/utils': 'file:projects/utils.tgz'
   '@rushstack/eslint-config': 1.0.2_eslint@7.3.1+typescript@3.9.5
   '@types/node': 14.0.14
   '@typescript-eslint/eslint-plugin': 3.5.0_65f44fdb31e331ad1d8edb13f8ed8a6c
@@ -8834,7 +8836,7 @@ packages:
     dev: false
     name: '@rush-temp/application-deployment'
     resolution:
-      integrity: sha512-l4psqcQOEIKwQ2t3LA6pgHP9FH+FtpZJJHOnmyItWvbC9fTOAawE0jMOX+dwDqWM7idpA7faGE3KJh/MlMfwHA==
+      integrity: sha512-5n6Iik2Zg1uffuxiwrAr8vSaF3kfC4oQM8yT9MnqX4cMvFRWNjitAoXqWzsO4p/zHF4Mtj5oC7e6oTq92eTWgA==
       tarball: 'file:projects/application-deployment.tgz'
     version: 0.0.0
   'file:projects/aws-clients.tgz':
@@ -8901,6 +8903,19 @@ packages:
       integrity: sha512-i5Tg1jSIDQNw/TDXcL2zT00UXbfytJjte0HtSbs9jik2xud1sa212sup37wjWf4qqx2UbmnfSxbOuXtkU9EHtQ==
       tarball: 'file:projects/eslint-config.tgz'
     version: 0.0.0
+  'file:projects/events.tgz':
+    dependencies:
+      '@types/node': 14.0.14
+      '@typescript-eslint/eslint-plugin': 3.5.0_65f44fdb31e331ad1d8edb13f8ed8a6c
+      '@typescript-eslint/parser': 3.5.0_eslint@7.3.1+typescript@3.9.5
+      eslint: 7.3.1
+      typescript: 3.9.5
+    dev: false
+    name: '@rush-temp/events'
+    resolution:
+      integrity: sha512-0QPCtBbu8Iim0+t8/aLU2roJhxg7M2muXq6oOrVBrtys9qiDsuTvYPgHpqzIGUDoCAlPfVnnLI3BB7FiSvq/Dw==
+      tarball: 'file:projects/events.tgz'
+    version: 0.0.0
   'file:projects/jest-config.tgz':
     dev: false
     name: '@rush-temp/jest-config'
@@ -8916,6 +8931,19 @@ packages:
     resolution:
       integrity: sha512-s3b86WWzTQUnKLxK5+anHWJRUSQyb9RBFa+VG9bmpuPz2OU/kxHI4mvhS5fygD31G0Hk6nTvZpIOeZMwuEshVA==
       tarball: 'file:projects/ts-config.tgz'
+    version: 0.0.0
+  'file:projects/utils.tgz':
+    dependencies:
+      '@types/node': 14.0.14
+      '@typescript-eslint/eslint-plugin': 3.5.0_65f44fdb31e331ad1d8edb13f8ed8a6c
+      '@typescript-eslint/parser': 3.5.0_eslint@7.3.1+typescript@3.9.5
+      eslint: 7.3.1
+      typescript: 3.9.5
+    dev: false
+    name: '@rush-temp/utils'
+    resolution:
+      integrity: sha512-GYucIY6Os0GnyCegpQ13ScF+M6Y/fmOIMEWRmStYa6NNLQuW31xHkBqydbFRSq5MndPnmvPVT0/giEoxUsyw5g==
+      tarball: 'file:projects/utils.tgz'
     version: 0.0.0
 registry: ''
 specifiers:
@@ -8936,8 +8964,10 @@ specifiers:
   '@rush-temp/ci-deployment': 'file:./projects/ci-deployment.tgz'
   '@rush-temp/enqueue-updates': 'file:./projects/enqueue-updates.tgz'
   '@rush-temp/eslint-config': 'file:./projects/eslint-config.tgz'
+  '@rush-temp/events': 'file:./projects/events.tgz'
   '@rush-temp/jest-config': 'file:./projects/jest-config.tgz'
   '@rush-temp/ts-config': 'file:./projects/ts-config.tgz'
+  '@rush-temp/utils': 'file:./projects/utils.tgz'
   '@rushstack/eslint-config': ^1.0.2
   '@types/node': ^14.0.14
   '@typescript-eslint/eslint-plugin': ^3.4.0

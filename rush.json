@@ -382,6 +382,18 @@
       "reviewCategory": "production",
       "shouldPublish": false
     },
+    {
+      "packageName": "@code-for-baltimore/events",
+      "projectFolder": "packages/shared/events",
+      "reviewCategory": "production",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@code-for-baltimore/utils",
+      "projectFolder": "packages/shared/utils",
+      "reviewCategory": "production",
+      "shouldPublish": false
+    },
 
     // Config packages
     {

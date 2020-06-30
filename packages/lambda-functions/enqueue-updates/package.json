@@ -22,7 +22,9 @@
     "aws-sdk": "^2.706.0"
   },
   "dependencies": {
-    "@code-for-baltimore/aws-clients": "^0.0.1"
+    "@code-for-baltimore/aws-clients": "^0.0.1",
+    "@code-for-baltimore/events": "^0.0.1",
+    "@code-for-baltimore/utils": "^0.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",

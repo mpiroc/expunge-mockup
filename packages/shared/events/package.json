@@ -1,7 +1,7 @@
 {
-    "name": "@code-for-baltimore/models",
+    "name": "@code-for-baltimore/events",
     "version": "0.0.1",
-    "description": "Shapes used by multiple lambda functions",
+    "description": "Shapes for input events used by lambda functions",
     "main": "lib/index.ts",
     "scripts": {
       "build": "tsc",
@@ -14,6 +14,7 @@
       "@code-for-baltimore/eslint-config": "^0.0.1",
       "@code-for-baltimore/jest-config": "^0.0.1",
       "@code-for-baltimore/ts-config": "^0.0.1",
+      "@types/node": "^14.0.14",
       "@typescript-eslint/eslint-plugin": "^3.4.0",
       "@typescript-eslint/parser": "^3.4.0",
       "typescript": "^3.9.5",

@@ -1,3 +1,4 @@
+import * as aws from 'aws-sdk'
 import { ISqsClient, SqsClient, getInputQueueUrl } from '@code-for-baltimore/aws-clients'
 
 export async function handler(): Promise<void> {
@@ -6,8 +7,6 @@ export async function handler(): Promise<void> {
     // enables code-splitting for asynchronously-imported packages.
     // TODO: Is NodeJS smart enough to cache dynamic imports? We don't want to
     //       re-import on warm-start invocations.
-    const aws = await import('aws-sdk')
-
     console.log(`Hello, add-subscription!`)
     console.log(`Region: ${aws.config.region}`)
 

@@ -41,14 +41,18 @@ export class FunctionWithInputQueue extends cdk.Construct {
         this._function.addEventSource(new SqsEventSource(this._inputQueue))
     }
 
-    public grantSendMessages(sender: FunctionWithInputQueue): iam.Grant {
+    private get role(): iam.IRole {
         const role = this._function.role
         if (!role) {
             throw new Error(`Function ${this._function.functionName} does not have a role`)
         }
 
+        return role
+    }
+
+    public grantSendMessages(sender: FunctionWithInputQueue): iam.Grant {
         sender._function.addEnvironment(formatInputQueueUrlKey(this._packageName), this._inputQueue.queueUrl)
 
-        return this._inputQueue.grantSendMessages(role)
+        return this._inputQueue.grantSendMessages(sender.role)
     }
 }

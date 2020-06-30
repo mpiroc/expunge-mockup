@@ -4,6 +4,7 @@ import * as lambda from '@aws-cdk/aws-lambda'
 import { SqsEventSource } from '@aws-cdk/aws-lambda-event-sources'
 import * as sqs from '@aws-cdk/aws-sqs'
 import * as path from 'path'
+import { formatInputQueueUrlKey } from '@code-for-baltimore/aws-clients'
 
 export interface IFunctionWithInputQueueProps extends Pick<lambda.FunctionProps, 'handler' | 'runtime'>{
     packageName: string
@@ -46,7 +47,7 @@ export class FunctionWithInputQueue extends cdk.Construct {
             throw new Error(`Function ${this._function.functionName} does not have a role`)
         }
 
-        sender._function.addEnvironment(`INPUT_QUEUE_URL_${this._packageName}`, this._inputQueue.queueUrl)
+        sender._function.addEnvironment(formatInputQueueUrlKey(this._packageName), this._inputQueue.queueUrl)
 
         return this._inputQueue.grantSendMessages(role)
     }

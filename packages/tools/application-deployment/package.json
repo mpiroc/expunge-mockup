@@ -21,6 +21,7 @@
     "@aws-cdk/aws-sqs": "^1.47.0",
     "@aws-cdk/aws-ssm": "^1.47.0",
     "@aws-cdk/core": "^1.47.0",
+    "@code-for-baltimore/aws-clients": "^0.0.1",
     "aws-sdk": "^2.706.0"
   },
   "devDependencies": {

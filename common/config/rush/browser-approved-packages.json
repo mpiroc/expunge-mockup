@@ -48,7 +48,7 @@
     },
     {
       "name": "@code-for-baltimore/aws-clients",
-      "allowedCategories": [ "production" ]
+      "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "@code-for-baltimore/enqueue-updates",

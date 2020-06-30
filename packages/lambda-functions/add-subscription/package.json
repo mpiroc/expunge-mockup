@@ -4,7 +4,7 @@
   "description": "Lambda function that subscribes a the specified user to status updates for the specified case",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc && parcel build out/bin/index.js --target lambda"
+    "build": "tsc && parcel build out/bin/index.js --target lambda --no-minify"
   },
   "targets": {
     "lambda": {
@@ -13,7 +13,9 @@
         "node": ">=12.x"
       },
       "isLibrary": true,
-      "includeNodeModules": true
+      "includeNodeModules": {
+        "aws-sdk": false
+      }
     }
   },
   "peerDependencies": {

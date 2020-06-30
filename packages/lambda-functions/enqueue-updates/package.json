@@ -4,7 +4,7 @@
   "description": "Lambda function that searches for cases that haven't been updated in a while, and queues them to be refreshed",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc && parcel build out/bin/index.js --target lambda"
+    "build": "tsc && parcel build out/bin/index.js --target lambda --no-minify"
   },
   "targets": {
     "lambda": {
@@ -13,7 +13,9 @@
         "node": ">=12.x"
       },
       "isLibrary": true,
-      "includeNodeModules": true
+      "includeNodeModules": {
+        "aws-sdk": false
+      }
     }
   },
   "peerDependencies": {
